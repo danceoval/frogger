@@ -48,7 +48,6 @@ var Engine = (function(global) {
 
     function update(dt) {
         updateEntities(dt);
-        checkCollisions();
     }
 
     function updateEntities(dt) {
@@ -85,10 +84,6 @@ var Engine = (function(global) {
             enemy.render();
         });
         player.render();
-    }
-
-    function reset() {
-        // noop
     }
 
     Resources.load([
